@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.OpenApi" Version="1.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\01. Utilities\Rose.Utilities\Rose.Utilities\Rose.Utilities.csproj" />
+    <ProjectReference Include="..\..\..\02. Core\Rose.Core.ApplicationServices\Rose.Core.ApplicationServices\Rose.Core.ApplicationServices.csproj" />
+    <ProjectReference Include="..\..\..\02. Core\Rose.Core.Contracts\Rose.Core.Contracts\Rose.Core.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\02. Core\Rose.Core.Domain.Toolkits\Rose.Core.Domain.Toolkits\Rose.Core.Domain.Toolkits.csproj" />
+    <ProjectReference Include="..\..\..\02. Core\Rose.Core.Domain\Rose.Core.Domain\Rose.Core.Domain.csproj" />
+    <ProjectReference Include="..\..\..\03. Infra\Data\Rose.Infra.Data.ChangeInterceptors.MongoDb\Rose.Infra.Data.ChangeInterceptors.Sql\Rose.Infra.Data.ChangeInterceptors.Sql.csproj" />
+    <ProjectReference Include="..\..\..\03. Infra\Data\Rose.Infra.Data.ChangeInterceptors\Rose.Infra.Data.ChangeInterceptors\Rose.Infra.Data.ChangeInterceptors.csproj" />
+    <ProjectReference Include="..\..\..\03. Infra\Events\Rose.Infra.Events.Outbox\Rose.Infra.Events.Outbox.csproj" />
+    <ProjectReference Include="..\..\..\03. Infra\Events\Rose.Infra.Events.PoolingPublisher\Rose.Infra.Events.PoolingPublisher.csproj" />
+    <ProjectReference Include="..\..\..\03. Infra\Messaging\Rose.Messaging.IdempotentConsumers.Store.Sql\Rose.Messaging.IdempotentConsumers.Store.Sql.csproj" />
+    <ProjectReference Include="..\..\..\03. Infra\Messaging\Rose.Messaging.IdempotentConsumers\Rose.Messaging.IdempotentConsumers.csproj" />
+    <ProjectReference Include="..\..\..\03. Infra\Messaging\Rose.Messaging.MessageBus.RabbitMq\Rose.Messaging.MessageBus.RabbitMq.csproj" />
+  </ItemGroup>
+
+</Project>

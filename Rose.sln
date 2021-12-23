@@ -11,15 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Infra", "03. Infra", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. EndPoints", "04. EndPoints", "{6A73A7CA-897D-4EAF-B4DB-9C22667676AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.Utilities", "01. Utilities\Rose.Utilities\Rose.Utilities\Rose.Utilities.csproj", "{ABA7BE64-345A-4B0D-A80B-47B6AC98F303}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rose.Utilities", "01. Utilities\Rose.Utilities\Rose.Utilities\Rose.Utilities.csproj", "{ABA7BE64-345A-4B0D-A80B-47B6AC98F303}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.Core.ApplicationServices", "02. Core\Rose.Core.ApplicationServices\Rose.Core.ApplicationServices\Rose.Core.ApplicationServices.csproj", "{E14C789D-2138-47E6-AD84-01FE5E5876A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rose.Core.ApplicationServices", "02. Core\Rose.Core.ApplicationServices\Rose.Core.ApplicationServices\Rose.Core.ApplicationServices.csproj", "{E14C789D-2138-47E6-AD84-01FE5E5876A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.Core.Contracts", "02. Core\Rose.Core.Contracts\Rose.Core.Contracts\Rose.Core.Contracts.csproj", "{C7E1884F-5D6F-4EE4-B41A-2CD74E0294FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rose.Core.Contracts", "02. Core\Rose.Core.Contracts\Rose.Core.Contracts\Rose.Core.Contracts.csproj", "{C7E1884F-5D6F-4EE4-B41A-2CD74E0294FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.Core.Domain", "02. Core\Rose.Core.Domain\Rose.Core.Domain\Rose.Core.Domain.csproj", "{77A9D995-6582-492E-B795-730446017284}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rose.Core.Domain", "02. Core\Rose.Core.Domain\Rose.Core.Domain\Rose.Core.Domain.csproj", "{77A9D995-6582-492E-B795-730446017284}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.Core.Domain.Toolkits", "02. Core\Rose.Core.Domain.Toolkits\Rose.Core.Domain.Toolkits\Rose.Core.Domain.Toolkits.csproj", "{A5FA21D8-9DB5-46B4-BB27-2FB3878BDB16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rose.Core.Domain.Toolkits", "02. Core\Rose.Core.Domain.Toolkits\Rose.Core.Domain.Toolkits\Rose.Core.Domain.Toolkits.csproj", "{A5FA21D8-9DB5-46B4-BB27-2FB3878BDB16}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{5D9B4CB0-C58E-4A09-9558-87D7EC65D513}"
 EndProject
@@ -28,6 +28,22 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{9E7AF38A-1D0B-4959-B22D-D7CC1A6A0922}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{E6DEA273-977B-4A18-AAC2-F23DCC26C8B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.Infra.Data.ChangeInterceptors", "03. Infra\Data\Rose.Infra.Data.ChangeInterceptors\Rose.Infra.Data.ChangeInterceptors\Rose.Infra.Data.ChangeInterceptors.csproj", "{43805782-275A-4A37-B519-2202979BD4A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.Infra.Data.ChangeInterceptors.Sql", "03. Infra\Data\Rose.Infra.Data.ChangeInterceptors.MongoDb\Rose.Infra.Data.ChangeInterceptors.Sql\Rose.Infra.Data.ChangeInterceptors.Sql.csproj", "{F217CA85-3E01-41E0-93DD-F59E896B10B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.Infra.Events.Outbox", "03. Infra\Events\Rose.Infra.Events.Outbox\Rose.Infra.Events.Outbox.csproj", "{373E4339-BA67-488E-AB77-A95F56C74814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.Infra.Events.PoolingPublisher", "03. Infra\Events\Rose.Infra.Events.PoolingPublisher\Rose.Infra.Events.PoolingPublisher.csproj", "{2043DF7B-D877-4A7D-AAA9-B900C664E0E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.Messaging.IdempotentConsumers", "03. Infra\Messaging\Rose.Messaging.IdempotentConsumers\Rose.Messaging.IdempotentConsumers.csproj", "{144F281C-ABEE-416A-B57B-35429D0DE581}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.Messaging.IdempotentConsumers.Store.Sql", "03. Infra\Messaging\Rose.Messaging.IdempotentConsumers.Store.Sql\Rose.Messaging.IdempotentConsumers.Store.Sql.csproj", "{28299DD2-184A-4F3A-A20C-A3134F4BE9E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.Messaging.MessageBus.RabbitMq", "03. Infra\Messaging\Rose.Messaging.MessageBus.RabbitMq\Rose.Messaging.MessageBus.RabbitMq.csproj", "{3FF20A17-03EC-4503-A7E0-4C0758270E09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.EndPoints.Web", "04. EndPoints\Rose.EndPoints.Web\Rose.EndPoints.Web\Rose.EndPoints.Web.csproj", "{7E933AF1-0B43-4577-A6F7-7DEF30BBEC3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +71,38 @@ Global
 		{A5FA21D8-9DB5-46B4-BB27-2FB3878BDB16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5FA21D8-9DB5-46B4-BB27-2FB3878BDB16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5FA21D8-9DB5-46B4-BB27-2FB3878BDB16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43805782-275A-4A37-B519-2202979BD4A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43805782-275A-4A37-B519-2202979BD4A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43805782-275A-4A37-B519-2202979BD4A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43805782-275A-4A37-B519-2202979BD4A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F217CA85-3E01-41E0-93DD-F59E896B10B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F217CA85-3E01-41E0-93DD-F59E896B10B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F217CA85-3E01-41E0-93DD-F59E896B10B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F217CA85-3E01-41E0-93DD-F59E896B10B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{373E4339-BA67-488E-AB77-A95F56C74814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{373E4339-BA67-488E-AB77-A95F56C74814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373E4339-BA67-488E-AB77-A95F56C74814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{373E4339-BA67-488E-AB77-A95F56C74814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2043DF7B-D877-4A7D-AAA9-B900C664E0E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2043DF7B-D877-4A7D-AAA9-B900C664E0E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2043DF7B-D877-4A7D-AAA9-B900C664E0E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2043DF7B-D877-4A7D-AAA9-B900C664E0E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{144F281C-ABEE-416A-B57B-35429D0DE581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144F281C-ABEE-416A-B57B-35429D0DE581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144F281C-ABEE-416A-B57B-35429D0DE581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144F281C-ABEE-416A-B57B-35429D0DE581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28299DD2-184A-4F3A-A20C-A3134F4BE9E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28299DD2-184A-4F3A-A20C-A3134F4BE9E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28299DD2-184A-4F3A-A20C-A3134F4BE9E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28299DD2-184A-4F3A-A20C-A3134F4BE9E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF20A17-03EC-4503-A7E0-4C0758270E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF20A17-03EC-4503-A7E0-4C0758270E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF20A17-03EC-4503-A7E0-4C0758270E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF20A17-03EC-4503-A7E0-4C0758270E09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E933AF1-0B43-4577-A6F7-7DEF30BBEC3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E933AF1-0B43-4577-A6F7-7DEF30BBEC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E933AF1-0B43-4577-A6F7-7DEF30BBEC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E933AF1-0B43-4577-A6F7-7DEF30BBEC3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +117,14 @@ Global
 		{4A2DE41C-91EB-46D6-A81D-4674DEAAAEC4} = {F8A6DC08-FF53-46E4-85B7-11467F571C7A}
 		{9E7AF38A-1D0B-4959-B22D-D7CC1A6A0922} = {F8A6DC08-FF53-46E4-85B7-11467F571C7A}
 		{E6DEA273-977B-4A18-AAC2-F23DCC26C8B8} = {F8A6DC08-FF53-46E4-85B7-11467F571C7A}
+		{43805782-275A-4A37-B519-2202979BD4A0} = {5D9B4CB0-C58E-4A09-9558-87D7EC65D513}
+		{F217CA85-3E01-41E0-93DD-F59E896B10B2} = {5D9B4CB0-C58E-4A09-9558-87D7EC65D513}
+		{373E4339-BA67-488E-AB77-A95F56C74814} = {4A2DE41C-91EB-46D6-A81D-4674DEAAAEC4}
+		{2043DF7B-D877-4A7D-AAA9-B900C664E0E6} = {4A2DE41C-91EB-46D6-A81D-4674DEAAAEC4}
+		{144F281C-ABEE-416A-B57B-35429D0DE581} = {9E7AF38A-1D0B-4959-B22D-D7CC1A6A0922}
+		{28299DD2-184A-4F3A-A20C-A3134F4BE9E9} = {9E7AF38A-1D0B-4959-B22D-D7CC1A6A0922}
+		{3FF20A17-03EC-4503-A7E0-4C0758270E09} = {9E7AF38A-1D0B-4959-B22D-D7CC1A6A0922}
+		{7E933AF1-0B43-4577-A6F7-7DEF30BBEC3E} = {6A73A7CA-897D-4EAF-B4DB-9C22667676AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6045F7C-7EC6-4458-9643-3CB3982B838E}
